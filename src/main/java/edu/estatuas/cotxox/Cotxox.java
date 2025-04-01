@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import edu.estatuas.cotxox.carrera.*;
+import edu.estatuas.cotxox.conductores.*;
 
 public class Cotxox {
 
@@ -43,5 +44,13 @@ public class Cotxox {
 
         System.out.println("\n#####" + "\t Get a ride: Driver: \t" + "#####\n");
 
+        /**
+         * Necesitamos crear la flota de conductores de donde seleccionar uno
+         * para ofrecer el servicio.
+         * La flota es un objeto de tipo PoolConductores.
+         */
+
+        List<Conductor> poolConductores = new ArrayList<Conductor>();
+        Conductor conductor = null;
     }
 }

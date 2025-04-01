@@ -6,7 +6,7 @@
 
   <groupId>edu.estatuas</groupId>
   <artifactId>cotxox</artifactId>
-  <version>cotxox-1.0</version>
+  <version>1.0</version>
 
   <name>Cotxox</name>
   <url>https://github.com/UnTalRubi/Cotxox</url>
@@ -59,7 +59,7 @@
         <archive>
           <manifest>
             <addClasspath>true</addClasspath>
-            <mainClass>edu.estatuas.stockx.Stockx</mainClass> <!-- Change jar route-->
+            <mainClass>edu.estatuas.cotxox.Cotxox</mainClass> <!-- Change jar route-->
           </manifest>
           <manifestEntries>
             <url>${project.url}</url>

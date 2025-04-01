@@ -29,4 +29,23 @@ public class CarreraTest {
         assertEquals(15, carrera.getTiempoEsperado());
     }
 
+    @Test
+    public void getCosteTotalRealTest() {
+
+        Carrera carrera = new Carrera("1234567890335245");
+        carrera.setTiempoEsperado(13);
+        carrera.setDistancia(10);
+
+        assertEquals(18.05, carrera.getCosteEsperado());
+    }
+
+    @Test
+    public void getCosteTotalMinunoTest() {
+
+        Carrera carrera = new Carrera("1234567890335245");
+        carrera.setTiempoEsperado(1);
+        carrera.setDistancia(1);
+
+        assertEquals(5., carrera.getCosteEsperado());
+    }
 }

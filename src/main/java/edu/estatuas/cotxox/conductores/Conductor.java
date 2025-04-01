@@ -10,8 +10,8 @@ public class Conductor {
         this.nombre = nombre;
     }
 
-    public void getNombre(String nombre) {
-        this.nombre = nombre;
+    public String getNombre() {
+        return this.nombre;
     }
 
     public void setModelo(String modelo) {

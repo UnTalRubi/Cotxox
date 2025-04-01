@@ -1,5 +1,6 @@
 package edu.estatuas.cotxox.carrera;
 
+import edu.estatuas.cotxox.conductores.Conductor;
 import edu.estatuas.cotxox.tarifa.Tarifa;
 
 public class Carrera {
@@ -9,6 +10,7 @@ public class Carrera {
     private String destino;
     private double distancia;
     private int tiempoEsperado;
+    private Conductor conductor;
 
     public Carrera(String tarjetaCredito) {
         this.tarjeraCredito = tarjetaCredito;

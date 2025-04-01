@@ -1,5 +1,7 @@
 package edu.estatuas.cotxox.carrera;
 
+import edu.estatuas.cotxox.tarifa.Tarifa;
+
 public class Carrera {
 
     private String tarjeraCredito;
@@ -46,6 +48,10 @@ public class Carrera {
 
     public int getTiempoEsperado() {
         return tiempoEsperado;
+    }
+
+    public double getCosteEsperado() {
+        return Tarifa.getCosteTotalEsperado(this);
     }
 
 }

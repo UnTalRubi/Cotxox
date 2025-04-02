@@ -1,6 +1,7 @@
 package edu.estatuas.cotxox.carrera;
 
 import edu.estatuas.cotxox.conductores.Conductor;
+import edu.estatuas.cotxox.conductores.PoolConductores;
 import edu.estatuas.cotxox.tarifa.Tarifa;
 
 public class Carrera {
@@ -11,6 +12,8 @@ public class Carrera {
     private double distancia;
     private int tiempoEsperado;
     private Conductor conductor;
+    private double costeTotal;
+    private int propina;
 
     public Carrera(String tarjetaCredito) {
         this.tarjeraCredito = tarjetaCredito;
@@ -54,6 +57,37 @@ public class Carrera {
 
     public double getCosteEsperado() {
         return Tarifa.getCosteTotalEsperado(this);
+    }
+
+    public void asignarConductor(PoolConductores conductores) {
+
+        this.conductor = conductores.asignarConductor();
+    }
+
+    public Conductor getConductor() {
+        return conductor;
+    }
+
+    public void realizarPago(double costeEsperado) {
+        this.costeTotal = costeEsperado;
+
+    }
+
+    public void recibirPropina(int propina) {
+
+        this.propina = propina;
+    }
+
+    public int getPropina() {
+        return propina;
+    }
+
+    public double getCosteTotal() {
+        return costeTotal;
+    }
+
+    public void liberarConductor() {
+        this.conductor.setOcupado(false);
     }
 
 }

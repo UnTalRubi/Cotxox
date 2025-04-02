@@ -8,6 +8,7 @@ public class Conductor {
     private String modelo;
     private String matricula;
     private ArrayList<Byte> valoraciones = new ArrayList<>();
+    private boolean ocupado = false;
 
     public Conductor(String nombre) {
         this.nombre = nombre;
@@ -35,5 +36,13 @@ public class Conductor {
 
     public void setValoracion(byte valoracion) {
         this.valoraciones.add(valoracion);
+    }
+
+    public void setOcupado(Boolean ocupado) {
+        this.ocupado = ocupado;
+    }
+
+    public boolean isOcupado() {
+        return this.ocupado;
     }
 }

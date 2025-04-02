@@ -16,4 +16,13 @@ public class PoolConductores {
         return poolConductores;
     }
 
+    /*
+     * public Conductor asignarConductor(){
+     * 
+     * for (Conductor conductor : this.poolConductores){
+     * if (conductor)
+     * 
+     * }
+     * }
+     */
 }

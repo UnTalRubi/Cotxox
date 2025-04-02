@@ -1,6 +1,9 @@
 package edu.estatuas.cotxox.carrera;
 
+import java.util.List;
+
 import edu.estatuas.cotxox.conductores.Conductor;
+import edu.estatuas.cotxox.conductores.PoolConductores;
 import edu.estatuas.cotxox.tarifa.Tarifa;
 
 public class Carrera {
@@ -56,4 +59,7 @@ public class Carrera {
         return Tarifa.getCosteTotalEsperado(this);
     }
 
+    public void asignarConductor(PoolConductores conductores) {
+
+    }
 }

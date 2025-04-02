@@ -61,5 +61,10 @@ public class Carrera {
 
     public void asignarConductor(PoolConductores conductores) {
 
+        this.conductor = conductores.asignarConductor();
+    }
+
+    public Conductor getConductor() {
+        return conductor;
     }
 }

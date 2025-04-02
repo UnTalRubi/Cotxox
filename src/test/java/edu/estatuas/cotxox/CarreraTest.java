@@ -40,7 +40,7 @@ public class CarreraTest {
     }
 
     @Test
-    public void getCosteTotalMinunoTest() {
+    public void getCosteTotalMinimoTest() {
 
         Carrera carrera = new Carrera("1234567890335245");
         carrera.setTiempoEsperado(1);

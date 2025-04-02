@@ -16,13 +16,15 @@ public class PoolConductores {
         return poolConductores;
     }
 
-    /*
-     * public Conductor asignarConductor(){
-     * 
-     * for (Conductor conductor : this.poolConductores){
-     * if (conductor)
-     * 
-     * }
-     * }
-     */
+    public Conductor asignarConductor() {
+
+        for (Conductor conductor : this.poolConductores) {
+            if (!conductor.isOcupado()) {
+                conductor.setOcupado(true);
+                return conductor;
+            }
+        }
+        return null;
+    }
+
 }

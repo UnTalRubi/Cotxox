@@ -80,5 +80,22 @@ public class Cotxox {
         /* Seleccion del conductor en la flota y asignacion a la carrera */
 
         carrera.asignarConductor(conductores);
+
+        // Info por pantalla
+
+        System.out.println("Driver: " + carrera.getConductor().getNombre());
+        System.out.println("Type: " + carrera.getConductor().getModelo());
+        System.out.println("Matricula: " + carrera.getConductor().getMatricula());
+        System.out.println("Stars: " + carrera.getConductor().getValoracion());
+        System.out.println("From: " + carrera.getOrigen());
+        System.out.println("To: " + carrera.getDestino());
+        boolean ocupado = carrera.getConductor().isOcupado();
+        if (ocupado) {
+            System.out.println("Disponible para ti");
+        } else {
+            System.out.println("Esta conductora no esta disponible :/");
+        }
+        // cancel ride
+        // contact by phone
     }
 }

@@ -53,7 +53,7 @@ public class Conductor {
 
     private double calcularValoracionMedia() {
 
-        int sumValoraciones = 0;
+        double sumValoraciones = 0;
         for (Byte valoracion : valoraciones) {
             sumValoraciones += valoracion;
         }

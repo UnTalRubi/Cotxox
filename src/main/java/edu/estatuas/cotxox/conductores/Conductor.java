@@ -1,10 +1,13 @@
 package edu.estatuas.cotxox.conductores;
 
+import java.util.ArrayList;
+
 public class Conductor {
 
     private String nombre;
     private String modelo;
     private String matricula;
+    private ArrayList<Byte> valoraciones = new ArrayList<>();
 
     public Conductor(String nombre) {
         this.nombre = nombre;
@@ -28,5 +31,9 @@ public class Conductor {
 
     public String getMatricula() {
         return matricula;
+    }
+
+    public void setValoracion(byte valoracion) {
+        this.valoraciones.add(valoracion);
     }
 }
